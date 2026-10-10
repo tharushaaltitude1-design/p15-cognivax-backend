@@ -1,0 +1,20 @@
+rules_version = '2';
+
+// Cognivax Firestore security rules.
+//
+// Each signed-in user owns a single private workspace document at
+// users/{uid}. The app creates that document (pre-filled with the Cognivax
+// demo workspace) the first time a user signs in, then keeps it in sync.
+// No one can read or write another user's data, and every other path is
+// denied by default.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
