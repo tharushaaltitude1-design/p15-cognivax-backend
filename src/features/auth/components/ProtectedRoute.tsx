@@ -1,5 +1,5 @@
 import { useEffect, type ReactNode } from "react";
-import { useNavigate, useRouterState } from "@tanstack/react-router";
+import { useNavigate, useRouterState } from "@/lib/router-compat";
 
 import { AuthLoadingScreen } from "./AuthLoadingScreen";
 import { useAuth } from "../useAuth";

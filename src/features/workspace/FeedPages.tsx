@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { Link, useNavigate } from "@/lib/router-compat";
 import { useQuery } from "@tanstack/react-query";
 import {
   Bell,
@@ -249,7 +249,7 @@ export function NotificationsPage() {
         }
       />
       <div className="panel">
-        <div className="flex gap-1 overflow-x-auto border-b border-border p-4">
+        <div className="flex flex-wrap gap-1 border-b border-border p-4">
           {["All", "Unread", "Approvals", "Exceptions", "System"].map((t) => (
             <Button
               variant={tab === t ? "secondary" : "ghost"}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router-compat";
 import { Mail, X } from "lucide-react";
 import { toast } from "sonner";
 

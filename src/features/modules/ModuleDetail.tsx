@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "@tanstack/react-router";
+import { useNavigate } from "@/lib/router-compat";
 import {
   Pencil,
   Copy,
@@ -155,7 +155,7 @@ export function ModuleDetail({ module, id }: { module: ModuleKey; id: string }) 
       </div>
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_290px]">
         <section className="panel overflow-hidden">
-          <div className="flex gap-1 overflow-x-auto border-b border-border px-4 py-3">
+          <div className="flex flex-wrap gap-1 border-b border-border px-4 py-3">
             {["Overview", "Linked Records", "History", "Comments / Notes"].map((t) => (
               <Button
                 key={t}

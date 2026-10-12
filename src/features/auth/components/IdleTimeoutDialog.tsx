@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "@tanstack/react-router";
+import { useNavigate } from "@/lib/router-compat";
 import { Timer } from "lucide-react";
 import { toast } from "sonner";
 

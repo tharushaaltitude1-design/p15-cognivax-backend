@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router-compat";
 import {
   Save,
   Upload,
@@ -204,7 +204,7 @@ export function ProfilePage() {
           )}
         </div>
       </section>
-      <div className="mb-6 flex gap-1 overflow-x-auto border-b border-border pb-4">
+      <div className="mb-6 flex flex-wrap gap-1 border-b border-border pb-4">
         {["Personal Info", "Preferences", "Security", "My Activity", "Owned Records"].map((t) => (
           <Button
             key={t}
@@ -401,7 +401,7 @@ export function SettingsPage() {
         eyebrow="Account / Workspace configuration"
       />
       <div className="grid gap-6 lg:grid-cols-[220px_minmax(0,1fr)]">
-        <nav className="flex gap-1 overflow-x-auto lg:flex-col lg:self-start">
+        <nav className="flex flex-wrap gap-1 lg:flex-col lg:self-start">
           {tabs.map(({ name, icon: Icon }) => (
             <Button
               key={name}

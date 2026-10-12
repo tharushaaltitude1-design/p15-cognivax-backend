@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { Link, useNavigate } from "@/lib/router-compat";
 import { CircleCheck, LogOut, MailCheck, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 

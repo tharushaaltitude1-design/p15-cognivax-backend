@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router-compat";
 import { ShieldAlert } from "lucide-react";
 
 import { Button } from "@/components/ui/button";

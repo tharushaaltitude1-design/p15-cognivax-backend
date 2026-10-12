@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { Link, useNavigate } from "@/lib/router-compat";
 import {
   Plus,
   ShieldCheck,
@@ -39,7 +39,7 @@ import { format } from "date-fns";
 import { toast } from "sonner";
 function GovernanceTabs({ active }: { active: string }) {
   return (
-    <nav className="mb-6 flex gap-2 overflow-x-auto border-b border-border pb-4">
+    <nav className="mb-6 flex flex-wrap gap-2 border-b border-border pb-4">
       {governanceNav.map((n) => (
         <Button
           asChild

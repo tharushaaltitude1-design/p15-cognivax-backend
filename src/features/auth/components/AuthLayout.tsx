@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router-compat";
 import { motion, useReducedMotion } from "framer-motion";
 import { BookOpen, Fingerprint, GitBranch, ShieldCheck } from "lucide-react";
 

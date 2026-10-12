@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useNavigate, useRouterState } from "@tanstack/react-router";
+import { useNavigate, useRouterState } from "@/lib/router-compat";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 
